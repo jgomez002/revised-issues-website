@@ -20,46 +20,38 @@ p{
 }
 
 h1{
+ align-items: center;
+ justify-content: center;
   text-align:center;
   font-size: 50px;
-  display: block;
+  display: flex;
 }
 
 div{
-  display: block;
+  display: flex;
 }
 a{
   font-size: 20px;
 }
-.parallax1 { /* from ww3 schools*/
-
-  background-image: url('');
-
-  /* Set a specific height */
+.title1 {
   height: 80%;
   width: 100%;
-
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 
 .row {
   box-sizing: border-box;
-  float: left;
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: row;
   padding: 10px;
   text-align: center;
 }
 
 .column {
-    float: left;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 50%;
 }
 
 .fadein {
@@ -67,7 +59,8 @@ animation: fadeIn 20s;
 }
 
 .center{
-  text-align: center;
+justify-content: center;
+align-items: center;
 }
 .red{
 color: #FF0000;
@@ -101,10 +94,10 @@ opacity: 100%;
 }
 
 .fixedcenter{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .kerning{
@@ -113,7 +106,6 @@ opacity: 100%;
 
 .menu{
   background-color: #d3d3d3;
-  overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -128,6 +120,6 @@ opacity: 100%;
 }
 
 .image{
-height: auto;
+height: 100%;
 width: 100%;
 }
