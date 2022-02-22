@@ -31,12 +31,17 @@ div{
   display: flex;
 }
 a{
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: bolder;
 }
 .title1 {
   height: 80%;
   width: 100%;
 }
+
+.title2{
+  height: 100%;
+  width: 100%;}
 
 
 .row {
@@ -57,7 +62,7 @@ a{
 }
 
 .fadein {
-animation: fadeIn 20s;
+animation: fadeIn 5s;
 }
 
 .center{
@@ -66,6 +71,14 @@ align-items: center;
 }
 .red{
 color: #FF0000;
+font-size: 47px;
+
+}
+.black{
+    color: #000;
+}
+.white{
+  color: #fff;
 }
 
 @keyframes fadeIn {
@@ -107,7 +120,10 @@ opacity: 100%;
 }
 
 .menu{
-  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   z-index: 1;
