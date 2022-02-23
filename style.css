@@ -81,6 +81,10 @@ font-size: 47px;
   color: #fff;
 }
 
+.grey{
+  color: #adadad;
+}
+
 @keyframes fadeIn {
  from {
    opacity: 0;
@@ -121,7 +125,7 @@ opacity: 100%;
 
 .menu{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 10px;
   background-color: #fff;
   position: fixed;
